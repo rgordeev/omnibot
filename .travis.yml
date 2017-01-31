@@ -8,7 +8,7 @@ python:
   - "pypy"
 
 install:
-  - pip install requests certifi urllib3 multiprocessing 'coverage<4' coveralls
+  - pip install requests certifi urllib3 'coverage<4' coveralls
 
 script: coverage run setup.py test
 
