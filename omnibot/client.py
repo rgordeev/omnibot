@@ -23,8 +23,3 @@ class Client(object):
         phones = range(MIN, MAX+1)
         logins = random.sample(phones, min(len(phones), size))
         return list(map(Client.client, logins))
-
-    @staticmethod
-    def clients(start, end):
-        phones = range(start, end + 1)
-        return list(map(Client.client, phones))
